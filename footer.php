@@ -1,4 +1,4 @@
-		<div class="wrap">
+		<div class="container">
 	            <footer id="bottom">
 	                <small>&copy; <?php echo date('Y'); ?> <?php echo site_name(); ?>. All rights reserved.</small>
 
@@ -16,5 +16,7 @@
 
 	        </div>
         </div>
+        <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+        <script src="<?php echo theme_url('js/bootstrap.min.js');?>"></script>
     </body>
 </html>
