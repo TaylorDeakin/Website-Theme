@@ -1,0 +1,5 @@
+Theme name:    Deakin
+Description:   My personal theme
+Author name:   Taylor Deakin
+Author site:   http://taylordeakin.me
+License:       http://license.taylordeakin.me
