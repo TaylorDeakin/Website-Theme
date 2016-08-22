@@ -60,7 +60,7 @@ function relative_time($date) {
 }
 
 function twitter_account() {
-	return site_meta('twitter', 'idiot');
+	return site_meta('twitter', 'TaylorDeakin');
 }
 
 function twitter_url() {

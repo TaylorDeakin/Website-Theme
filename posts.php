@@ -1,6 +1,6 @@
 <?php theme_include('header'); ?>
 <div class="row">
-    <div class="col-sm-9">
+    <div class="col-sm-8">
 
         <?php if (has_posts()): ?>
 
@@ -70,20 +70,14 @@
     <?php endif; ?>
 
     <?php else: ?>
-        <div class="wrap">
+        <div class="">
             <h1>No posts yet!</h1>
             <p>Looks like you have some writing to do!</p>
         </div>
     <?php endif; ?>
 
     </div>
-    <div class="col-sm-3 ">
-        <div class="sidebar">
-                <h3>Sidebar</h3>
-                Sidebar Stuff
-        </div>
-
-    </div>
+    <?php theme_include('sidebar'); ?>
 </div>
 
 <?php theme_include('footer'); ?>

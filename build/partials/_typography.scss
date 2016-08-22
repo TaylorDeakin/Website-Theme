@@ -1,0 +1,48 @@
+body {
+  font-family: $theme-font-body;
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $theme-font-headings;
+  font-weight: 700;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+.article-title {
+  color: #212121;
+  font-family: $theme-font-headings;
+  line-height: 1.04;
+  letter-spacing: -.028em;
+  text-transform: uppercase;
+}
+
+.article-author {
+  color: #555;
+  font-size: 24px;
+}
+
+.section-title {
+  background: #2c3e50;
+  color: #eee;
+  padding: 5px;
+}
+
+.item h3 {
+  margin-top: 0;
+}
+
+a {
+  color: $theme-color-primary;
+}
+
+a:hover {
+  color: lighten($theme-color-primary, 10%)
+}
+
+footer a {
+  color: #eee;
+}

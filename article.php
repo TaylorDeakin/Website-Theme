@@ -18,9 +18,7 @@
         <?php echo article_markdown(); ?>
     </article>
 </section>
-<aside class="col-sm-4 sidebar">
-    <h3>Sidebar</h3>
-</aside>
+    <?php theme_include('sidebar'); ?>
 </div>
 <?php if (comments_open()): ?>
     <section class="comments">
