@@ -40,11 +40,14 @@ footer {
 
 .footer-top {
   padding-left: 15px;
-  padding-bottom: 20px;
 }
 
 .footer-bottom {
-  padding: 20px;
+  background: darken($theme-color-primary,15%);
+  padding: 15px;
+}
+.footer-bottom p{
+ margin: 0;
 }
 
 .footer-contact {

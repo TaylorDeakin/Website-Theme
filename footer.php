@@ -1,19 +1,20 @@
-<footer class="">
+<footer>
     <div class="footer-top row">
-       <div class="col-md-12">
-           <small>&copy; <?php echo date('Y'); ?> <?php echo site_name(); ?>. All rights reserved.</small>
+        <div class="col-sm-12">
+            <h3>Information</h3>
+            <nav>
+                <ul role="navigation" class="list-unstyled">
+                    <?php if (twitter_account()): ?>
+                        <li><a href="<?php echo twitter_url(); ?>">@<?php echo twitter_account(); ?></a></li>
+                    <?php endif; ?>
+                    <li><a href="<?php echo rss_url(); ?>">RSS</a></li>
 
-           <ul role="navigation">
-               <li><a href="<?php echo rss_url(); ?>">RSS</a></li>
-               <?php if (twitter_account()): ?>
-                   <li><a href="<?php echo twitter_url(); ?>">@<?php echo twitter_account(); ?></a></li>
-               <?php endif; ?>
-
-               <li><a href="<?php echo base_url('admin'); ?>" title="Administer your site!">Admin area</a></li>
-
-               <li><a href="<?php echo base_url(); ?>" title="Return to my website.">Home</a></li>
-           </ul>
-       </div>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="footer-bottom ">
+            <p>&copy; <?php echo date('Y'); ?> <?php echo site_name(); ?>. All rights reserved.</p>
     </div>
 </footer>
 </div>
