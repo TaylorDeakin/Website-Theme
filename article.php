@@ -1,16 +1,27 @@
 <?php theme_include('header'); ?>
+<div class="row">
 
-<section class="container" id="article-<?php echo article_id(); ?>">
-    <?php if (article_custom_field('hero_image')) : ?>
-        <img class="img-hero" src="<?php echo article_custom_field('hero_image') ?>" alt="<?php echo article_title(); ?>"/>
-    <?php endif; ?>
-    <h1><?php echo article_title(); ?></h1>
+<section class="col-sm-8" id="article-<?php echo article_id(); ?>">
 
-    <article>
+    <article class="article-content">
+        <header>
+            <h2 class="article-title"><?php echo article_title(); ?></h2>
+            <?php if (article_custom_field('subtitle')) : ?>
+                <p class="lead article-subtitle"><?php echo article_custom_field('subtitle') ?></p>
+            <?php endif; ?>
+            <p class="author"><?php echo article_author(); ?></p>
+        </header>
+        <?php if (article_custom_field('hero_image')) : ?>
+            <img class="img-hero" src="<?php echo article_custom_field('hero_image') ?>"
+                 alt="<?php echo article_title(); ?>"/>
+        <?php endif; ?>
         <?php echo article_markdown(); ?>
     </article>
 </section>
-
+<aside class="col-sm-4 sidebar">
+    <h3>Sidebar</h3>
+</aside>
+</div>
 <?php if (comments_open()): ?>
     <section class="comments">
         <?php if (has_comments()): ?>
