@@ -32,10 +32,4 @@
         <li><a href="https://linkedin.com/TaylorDeakin">LinkedIn</a></li>
         <li><a href="https://twitter.com/TaylorDeakin">Twitter</a></li>
     </ul>
-
-    <h3>Latest Tweets</h3>
-    <a class="twitter-timeline" data-lang="en" data-height="800" data-dnt="true" data-theme="light"
-       href="https://twitter.com/TaylorDeakin">Tweets by TaylorDeakin</a>
-    <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 </aside>
