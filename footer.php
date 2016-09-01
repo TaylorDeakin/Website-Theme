@@ -1,6 +1,4 @@
 </div>
-</div>
-</div>
 <footer>
     <div class="container">
         <div class="footer-top row">
@@ -25,9 +23,6 @@
 
 </footer>
 
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"
-        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-<script src="<?php echo theme_url('js/bootstrap.min.js'); ?>"></script>
 <script src="<?php echo theme_url('js/prism.js'); ?>"></script>
 </body>
 </html>

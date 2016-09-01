@@ -3,9 +3,9 @@
     <form action="<?php echo search_url(); ?>" method="post" class="form-horizontal">
         <label for="search">Find a post</label>
         <div class="input-group">
+            <input type="hidden" id="whatSearch" name="whatSearch" value="all"/>
             <input name="term" id="term" type="text" class="form-control" placeholder="Search for..."
                    value="<?php echo search_term(); ?>">
-            <input type="hidden" id="whatSearch" name="whatSearch" value="all"/>
           <span class="input-group-btn">
             <button class="btn btn-default" type="submit">Search!</button>
           </span>
