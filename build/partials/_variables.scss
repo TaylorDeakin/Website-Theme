@@ -1,4 +1,6 @@
 $theme-color-primary: #BC3908;
-$theme-color-accent: #466522;
-$theme-font-headings: 'Oswald', sans-serif;
+$theme-color-accent: lighten($theme-color-primary,20%);
+$theme-color-dark: #0C090A;
+$theme-color-dark-accent: lighten($theme-color-dark,5%);
+$theme-font-headings: 'Source Sans Pro', sans-serif;
 $theme-font-body: 'Gentium Basic', serif;

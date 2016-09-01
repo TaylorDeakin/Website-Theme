@@ -4,16 +4,12 @@
 }
 
 .navbar-central {
-  background: $theme-color-primary;
+  text-align: center;
+  background: none;
   border-radius: 0;
   font-family: $theme-font-headings;
 
 }
-
-.navbar-central .navbar-brand {
-  color: #eee;
-}
-
 .navbar-central .navbar-brand:hover,
 .navbar-central .navbar-brand:focus {
   color: #212121;
@@ -21,11 +17,12 @@
 
 /*Navbar link */
 .navbar-central .navbar-nav > li > a {
-  color: #eeeeee;
-  padding: 20px;
+  color: $theme-color-dark;
+  padding: 20px 20px 0 0;
   margin: 0 20px;
-  font-size: 16px;
-  //font-weight: 600;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .navbar-central .navbar-nav > li > a:first-of-type {
@@ -34,15 +31,15 @@
 
 .navbar-central .navbar-nav > li > a:hover,
 .navbar-central .navbar-nav > li > a:focus {
-  color: #333;
-  background: darken($theme-color-primary,5%);
+  background: #fff;
+  color: $theme-color-accent;
 }
 
 .navbar-central .navbar-nav > .active > a,
 .navbar-central .navbar-nav > .active > a:hover,
 .navbar-central .navbar-nav > .active > a:focus {
-  background: darken($theme-color-primary,10%);
-  color: #eee;
+  background: #ffffff;
+  color: $theme-color-primary;
 }
 
 /* caret */
