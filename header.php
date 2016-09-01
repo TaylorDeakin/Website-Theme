@@ -36,38 +36,28 @@
     <?php endif; ?>
 </head>
 <body class="<?php echo body_class(); ?>">
-        <div class="container">
-            <header>
-                <div>
-                    <nav class="navbar navbar-central row">
-                            <!-- Brand and toggle get grouped for better mobile display -->
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                            </div>
-                            <!-- Collect the nav links, forms, and other content for toggling -->
-                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                <ul class="nav navbar-nav">
-                                    <?php if (has_menu_items()):
-                                        while (menu_items()): ?>
-                                            <li <?php echo(menu_active() ? 'class="active"' : ''); ?>>
-                                                <a href="<?php echo menu_url(); ?>"
-                                                   title="<?php echo menu_title(); ?>">
-                                                    <?php echo menu_name(); ?>
-                                                </a>
-                                            </li>
-                                        <?php endwhile;
-                                    endif; ?>
+<div class="container">
+    <header>
+        <div>
 
-                                </ul>
-                            </div><!-- /.navbar-collapse -->
-                    </nav>
+            <h1>Taylor Deakin</h1>
+            <nav class="navbar navbar-central">
 
-                </div>
+                <ul class="nav navbar-nav">
+                    <?php if (has_menu_items()):
+                        while (menu_items()): ?>
+                            <li <?php echo(menu_active() ? 'class="active"' : ''); ?>>
+                                <a href="<?php echo menu_url(); ?>"
+                                   title="<?php echo menu_title(); ?>">
+                                    <?php echo menu_name(); ?>
+                                </a>
+                            </li>
+                        <?php endwhile;
+                    endif; ?>
 
-            </header>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
