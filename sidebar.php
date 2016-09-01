@@ -36,6 +36,6 @@
     <h3>Latest Tweets</h3>
     <a class="twitter-timeline" data-lang="en" data-height="800" data-dnt="true" data-theme="light"
        href="https://twitter.com/TaylorDeakin">Tweets by TaylorDeakin</a>
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 </aside>

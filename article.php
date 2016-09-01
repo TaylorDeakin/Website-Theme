@@ -6,9 +6,12 @@
     <article class="article-content">
         <header>
             <h2 class="article-title"><?php echo article_title(); ?></h2>
-            <?php if (article_custom_field('subtitle')) : ?>
-                <p class="lead article-subtitle"><?php echo article_custom_field('subtitle') ?></p>
-            <?php endif; ?>
+            <small>
+                <em>Posted
+                    <time
+                        datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo article_date(); ?></time>
+                </em>
+            </small>
         </header>
         <?php if (article_custom_field('hero_image')) : ?>
             <img class="img-hero" src="<?php echo article_custom_field('hero_image') ?>"
