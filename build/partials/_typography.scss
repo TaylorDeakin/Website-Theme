@@ -12,6 +12,13 @@ h1, h2, h3 {
   //text-transform: uppercase;
 }
 
+header h1{
+  margin-bottom: 5px;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
+
+
 .article-title {
   color: #212121;
   font-family: $theme-font-headings;

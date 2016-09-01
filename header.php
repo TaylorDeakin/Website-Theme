@@ -37,27 +37,24 @@
 </head>
 <body class="<?php echo body_class(); ?>">
 <div class="container">
-    <header>
-        <div>
 
-            <h1>Taylor Deakin</h1>
-            <nav class="navbar navbar-central">
+    <header class="site-header">
+        <h1>Taylor Deakin</h1>
+        <nav class="navbar navbar-central">
 
-                <ul class="nav navbar-nav">
-                    <?php if (has_menu_items()):
-                        while (menu_items()): ?>
-                            <li <?php echo(menu_active() ? 'class="active"' : ''); ?>>
-                                <a href="<?php echo menu_url(); ?>"
-                                   title="<?php echo menu_title(); ?>">
-                                    <?php echo menu_name(); ?>
-                                </a>
-                            </li>
-                        <?php endwhile;
-                    endif; ?>
+            <ul class="nav navbar-nav">
+                <?php if (has_menu_items()):
+                    while (menu_items()): ?>
+                        <li <?php echo(menu_active() ? 'class="active"' : ''); ?>>
+                            <a href="<?php echo menu_url(); ?>"
+                               title="<?php echo menu_title(); ?>">
+                                <?php echo menu_name(); ?>
+                            </a>
+                        </li>
+                    <?php endwhile;
+                endif; ?>
 
-                </ul>
-            </nav>
-
-        </div>
-
+            </ul>
+        </nav>
     </header>
+
