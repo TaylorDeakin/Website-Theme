@@ -7,7 +7,7 @@
         <?php posts(); ?>
         <!-- featured/latest article-->
         <article class="article-featured item">
-            <h2>
+            <h2 class="article-title">
                 <a href="<?php echo article_url(); ?>"
                    title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
             </h2>
@@ -34,7 +34,7 @@
             ?>
             <div class="col-sm-6">
                 <article class="item">
-                    <h3>
+                    <h3 class="article-title">
                         <a href="<?php echo article_url(); ?>"
                            title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
                     </h3>

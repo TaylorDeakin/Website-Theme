@@ -20,6 +20,15 @@ h1, h2, h3 {
   text-transform: uppercase;
 }
 
+.article-title a{
+  color: inherit;
+  &:hover{
+    text-decoration: none;
+    color: $theme-color-accent;
+  }
+
+}
+
 .article-author {
   color: #555;
   font-size: 24px;
@@ -37,6 +46,8 @@ h1, h2, h3 {
 
 a {
   color: $theme-color-primary;
+  -webkit-transition: color 0.15s; /* Safari */
+  transition: color 0.15s;
 }
 
 a:hover {
