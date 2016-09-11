@@ -95,9 +95,9 @@ function og_title(){
 }
 function og_image(){
     if(article_custom_field('hero_image')){
-        return article_custom_field('hero_image');
+        return "http://taylordeakin.me/" . article_custom_field('hero_image');
     } else {
-        return "/themes/deakin/img/og_image.jpg";
+        return "http://taylordeakin.me/themes/deakin/img/og_image.jpg";
     }
 }
 
