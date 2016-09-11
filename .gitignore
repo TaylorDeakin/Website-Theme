@@ -53,3 +53,6 @@ fabric.properties
 
 # txt file with all the imports, if I want to re-add them
 original-bootstrap-imports
+
+## Google Analytics
+analytics.php
