@@ -20,11 +20,12 @@
     <meta name="viewport" content="width=device-width">
     <meta name="generator" content="Anchor CMS">
 
-    <meta property="og:title" content="<?php echo site_name(); ?>">
+    <meta property="og:title" content="<?php echo og_title(); ?>">
     <meta property="og:type" content="website">
     <meta property="og:url" content="<?php echo e(current_url()); ?>">
     <meta property="og:site_name" content="<?php echo site_name(); ?>">
-    <meta property="og:description" content="<?php echo site_description(); ?>">
+    <meta property="og:description" content="<?php echo og_description(); ?>">
+    <meta property="og:image" content="<?php echo og_image();?>">
 
     <?php if (customised()): ?>
         <!-- Custom CSS -->

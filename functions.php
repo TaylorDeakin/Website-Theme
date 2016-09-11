@@ -70,3 +70,34 @@ function twitter_url() {
 function total_articles() {
 	return Post::where(Base::table('posts.status'), '=', 'published')->count();
 }
+
+/*
+ * returns a description for use with open graph tags. Will return an article's description if
+ * the current page is an article
+ */
+function og_description() {
+	if(article_description()){
+		return article_description();
+	} else {
+		return site_description();
+	}
+}
+/*
+ * returns the title of the page - will either concatenate the article & site names,
+ * or just return site name
+ */
+function og_title(){
+    if(article_title()){
+        return article_title() . " | " . site_name();
+    } else {
+        return site_name();
+    }
+}
+function og_image(){
+    if(article_custom_field('hero_image')){
+        return article_custom_field('hero_image');
+    } else {
+        return "";
+    }
+}
+
