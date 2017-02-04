@@ -18,7 +18,7 @@
                 <img class="article-img" src="<?php echo article_custom_field('hero_image') ?>"
                      alt="<?php echo article_title(); ?>"/>
             <?php endif; ?>
-            <?php echo article_markdown(); ?>
+            <?php echo article_html(); ?>
         </article>
     </section>
 </div>
