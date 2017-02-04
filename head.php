@@ -5,7 +5,6 @@
     <meta name="description" content="<?php echo site_description(); ?>">
 
     <link rel="stylesheet" href="<?php echo theme_url('assets/css/styles.css'); ?>">
-    <link href="https://fonts.googleapis.com/css?family=Muli|Neuton" rel="stylesheet">
 
     <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo rss_url(); ?>">
     <link rel="shortcut icon" href="<?php echo theme_url('assets/img/favicon.png'); ?>">
