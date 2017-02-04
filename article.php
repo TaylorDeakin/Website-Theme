@@ -1,26 +1,26 @@
 <?php theme_include('header'); ?>
-<div class="row">
+<div class="container container-fill">
 
-<section class="col-sm-8" id="article-<?php echo article_id(); ?>">
+    <section id="article-<?php echo article_id(); ?>">
 
-    <article class="article-content">
-        <header>
-            <h2 class="article-title"><?php echo article_title(); ?></h2>
-            <small>
-                <em>Posted
-                    <time
-                        datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo article_date(); ?></time>
-                </em>
-            </small>
-        </header>
-        <?php if (article_custom_field('hero_image')) : ?>
-            <img class="img-hero" src="<?php echo article_custom_field('hero_image') ?>"
-                 alt="<?php echo article_title(); ?>"/>
-        <?php endif; ?>
-        <?php echo article_markdown(); ?>
-    </article>
-</section>
-    <?php theme_include('sidebar'); ?>
+        <article class="article-content">
+            <header>
+                <h2 class="article-title"><?php echo article_title(); ?></h2>
+                <small>
+                    <em>Posted
+                        <time
+                            datetime="<?php echo date(DATE_W3C,
+                                article_time()); ?>"><?php echo article_date(); ?></time>
+                    </em>
+                </small>
+            </header>
+            <?php if (article_custom_field('hero_image')) : ?>
+                <img class="article-img" src="<?php echo article_custom_field('hero_image') ?>"
+                     alt="<?php echo article_title(); ?>"/>
+            <?php endif; ?>
+            <?php echo article_markdown(); ?>
+        </article>
+    </section>
 </div>
 <?php if (comments_open()): ?>
     <section class="comments">

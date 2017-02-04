@@ -1,26 +1,28 @@
 <?php theme_include('header'); ?>
-<div class="row">
-    <div class="col-sm-8">
+<div class="container container-fill">
+    <main>
 
         <?php if (has_posts()): ?>
 
             <?php posts(); ?>
             <!-- featured/latest article-->
-            <article class="article-featured item">
+            <article class="article article-featured">
                 <h2 class="article-title">
                     <a href="<?php echo article_url(); ?>"
                        title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
                 </h2>
                 <?php if (article_custom_field('hero_image')) : ?>
-                    <img class="img-hero" src="<?php echo article_custom_field('hero_image') ?>"
+                    <img class="article-img" src="<?php echo article_custom_field('hero_image') ?>"
                          alt="<?php echo article_title(); ?>"/>
                 <?php endif; ?>
                 <div class="content">
                     <?php echo article_description(); ?>
-                    <br><small>
+                    <br>
+                    <small>
                         <em>Posted
                             <time
-                                datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time>
+                                datetime="<?php echo date(DATE_W3C,
+                                    article_time()); ?>"><?php echo relative_time(article_time()); ?></time>
                         </em>
                     </small>
                 </div>
@@ -28,43 +30,31 @@
 
             </article>
             <!-- loop through the rest of the posts-->
-            <?php $i = 0;
-            while (posts()):
-                if (($i % 2) == 0) echo '<div class="row">';
-                ++$i;
-                ?>
-                <div class="col-sm-6">
-                    <article class="item">
-                        <h3 class="article-title">
-                            <a href="<?php echo article_url(); ?>"
-                               title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
-                        </h3>
+            <?php while (posts()): ?>
+                <article class="article">
+                    <h3 class="article-title">
+                        <a href="<?php echo article_url(); ?>"
+                           title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
+                    </h3>
 
-                        <?php if (article_custom_field('hero_image')) : ?>
-                            <img class="img-hero" src="<?php echo article_custom_field('hero_image') ?>"
-                                 alt="<?php echo article_title(); ?>"/>
-                        <?php endif; ?>
-                        <div class="content">
-                            <?php echo article_description(); ?>
-                            <br><small>
-                                <em>Posted
-                                    <time
-                                        datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time>
-                                </em>
-                            </small>
-                        </div>
-                    </article>
-                </div>
-                <?php
-                if ($i % 2 == 0) {
-                    echo '</div>';
-                };
-                ?>
+                    <?php if (article_custom_field('hero_image')) : ?>
+                        <img class="article-img" src="<?php echo article_custom_field('hero_image') ?>"
+                             alt="<?php echo article_title(); ?>"/>
+                    <?php endif; ?>
+                    <div class="content">
+                        <?php echo article_description(); ?>
+                        <br>
+                        <small>
+                            <em>Posted
+                                <time
+                                    datetime="<?php echo date(DATE_W3C,
+                                        article_time()); ?>"><?php echo relative_time(article_time()); ?></time>
+                            </em>
+                        </small>
+                    </div>
+                </article>
+
             <?php endwhile; ?>
-            <?php if ($i % 2 != 0) {
-                echo '</div>';
-            }
-        ; ?>
             <?php if (has_pagination()): ?>
                 <nav class="pagination">
                     <div class="wrap">
@@ -85,8 +75,7 @@
             </div>
         <?php endif; ?>
 
-    </div>
-    <?php theme_include('sidebar'); ?>
+    </main>
 </div>
 
 <?php theme_include('footer'); ?>

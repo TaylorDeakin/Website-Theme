@@ -3,17 +3,11 @@
  * Created by Taylor Deakin
  * http://taylordeakin.me
  */
-
-@import "vendor/bootstrap";
 // variables
 @import "partials/variables";
-
 // type (headings etc)
 @import "partials/typography";
-
-// components
-@import "partials/navbar";
 @import "partials/layout";
-
 // prism (code highlighting)
 @import "partials/prism";
+@import "partials/utils";

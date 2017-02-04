@@ -1,28 +1,33 @@
-</div>
-<footer>
-    <div class="container">
-        <div class="footer-top row">
-            <div class="col-sm-12">
-                <nav>
-                    <ul role="navigation" class="list-unstyled">
-                        <?php if (twitter_account()): ?>
-                            <li><a href="<?php echo twitter_url(); ?>">@<?php echo twitter_account(); ?></a></li>
-                        <?php endif; ?>
-                        <li><a href="<?php echo rss_url(); ?>">RSS</a></li>
-
-                    </ul>
-                </nav>
-            </div>
-        </div>
+<footer class="site-footer">
+    <div class="container footer-row">
+        <nav class="footer-nav">
+            <a href="mailto:mail@taylordeakin.me">
+                <svg class="icon">
+                    <use xlink:href="#icon-mail"
+                </svg>
+            </a><a href="https://github.com/TaylorDeakin">
+                <svg class="icon">
+                    <use xlink:href="#icon-github"
+                </svg>
+            </a><a href="https://twitter.com/TaylorDeakin">
+                <svg class="icon">
+                    <use xlink:href="#icon-twitter"
+                </svg>
+            </a>
+            <!--TODO: get a linkedin set up
+                <a href="">
+                <svg class="icon">
+                    <use xlink:href="#icon-linkedin"
+                </svg>
+            </a>-->
+        </nav>
+        <p>&copy; <?php echo date('Y'); ?> <?php echo site_name(); ?> | <a href="<?php echo rss_url(); ?>">RSS</a></p>
     </div>
-    <div class="footer-bottom ">
-        <div class="container">
-            <p>&copy; <?php echo date('Y'); ?> <?php echo site_name(); ?>. All rights reserved.</p>
-        </div>
-    </div>
-
 </footer>
-
-<script src="<?php echo theme_url('js/prism.js'); ?>"></script>
+<script src="<?php echo theme_url('assets/js/app.js'); ?>"></script>
+<script>
+    objectFitImages();
+</script>
+<?php echo file_get_contents('themes/deakin/assets/icons.svg'); ?>
 </body>
 </html>

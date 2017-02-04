@@ -1,0 +1,44 @@
+.site-footer {
+  color: #FFF;
+
+  background: #1A1A1A;
+  padding: 15px;
+
+  .footer-bottom p {
+    margin: 0;
+  }
+}
+
+.footer-row {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+
+  @media(max-width: 500px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.footer-nav {
+  display: flex;
+  svg {
+    fill: #FFF;
+    width: 4rem;
+    height: 4rem;
+    padding: 12px;
+
+    @media (max-width: 500px) {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 2.8rem;
+      height: 2.8rem;
+      padding: 6px;
+    }
+
+    &:hover {
+      fill: $theme-color-primary;
+    }
+
+  }
+}

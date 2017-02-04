@@ -6,58 +6,28 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: $theme-font-headings;
   font-weight: 400;
+  margin: 6px 0;
 }
 
-header h1{
+header h1 {
   margin-bottom: 5px;
   letter-spacing: -2px;
   text-transform: uppercase;
-  font-weight:700;
-}
-
-
-.article-title {
-  color: #212121;
-  font-family: $theme-font-headings;
-  line-height: 1.04;
-  letter-spacing: -.028em;
-  word-wrap: break-word;
-}
-
-.article-title a{
-  color: inherit;
-  &:hover{
-    text-decoration: none;
-    color: $theme-color-accent;
-  }
-
-}
-
-.article-author {
-  color: #555;
-  font-size: 24px;
-}
-
-.section-title {
-  background: #2c3e50;
-  color: #eee;
-  padding: 5px;
-}
-
-.item h3 {
-  margin-top: 0;
+  font-weight: 700;
 }
 
 a {
   color: $theme-color-primary;
-  -webkit-transition: color 0.15s; /* Safari */
-  transition: color 0.15s;
+
+  &:hover {
+    color: lighten($theme-color-primary, 10%)
+  }
 }
 
-a:hover {
-  color: lighten($theme-color-primary, 10%)
+.container-home {
+  font-size: larger;
 }
 
-footer a {
-  color: #eee;
+h4 + p {
+  margin: .25rem 0;
 }

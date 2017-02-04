@@ -1,0 +1,30 @@
+article.article {
+  padding: 6px 0;
+}
+
+.article-title {
+  color: #212121;
+  font-family: $theme-font-headings;
+  line-height: 1.5;
+  letter-spacing: -.028em;
+  word-wrap: break-word;
+
+}
+
+.article-img {
+  height: 225px;
+  width: 100%;
+  object-fit: cover;
+  margin: 6px 0;
+  object-position: 50% 0;
+}
+
+.article-title a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: $theme-color-accent;
+  }
+
+}

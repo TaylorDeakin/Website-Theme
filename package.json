@@ -1,0 +1,31 @@
+{
+  "name": "deakin",
+  "version": "1.0.0",
+  "description": "personal site theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaylorDeakin/Website-Theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TaylorDeakin/Website-Theme/issues"
+  },
+  "homepage": "https://github.com/TaylorDeakin/Website-Theme#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-livereload": "^3.8.1",
+    "gulp-pixrem": "^1.0.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^1.9.1",
+    "postcss-flexbugs-fixes": "^2.1.0",
+    "postcss-object-fit-images": "^1.1.2"
+  }
+}

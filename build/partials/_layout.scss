@@ -1,82 +1,36 @@
-/*
- * Footer
- */
-footer {
-  margin-top: 40px;
-  background: $theme-color-dark-accent;
-  color: #eee;
+* {
+  box-sizing: border-box;
 }
 
-.footer-bottom {
-  background: $theme-color-dark;
-  padding: 15px;
-}
-.footer-top {
-  padding: 15px 0 0;
-}
-
-.footer-bottom p {
+body {
   margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.footer-contact {
-  text-align: center;
+.container {
+  @media (max-width: 760px) {
+    width: 100%;
+  }
+  width: 760px;
   margin: 0 auto;
+  padding: 0 12px;
 }
 
-.footer-social i {
-  padding: 15px;
-}
-/*
- * Sidebar
- */
-.sidebar {
-  height: 100%;
-  border-left: 1px solid #9d9d9d;
-  margin: 15px 0;
-  color: #eee;
-}
-/*
- * Header
- */
-header.site-header{
-  border-bottom: 3px solid $theme-color-dark-accent;
+.container-fill {
+  flex-grow: 1;
 }
 
-.btn-central {
-  background: $theme-color-accent;
-  border: 1px solid darken($theme-color-accent, 5%);
+.container-skinny {
+  @media(max-width: 720px) {
+    width: 100%;
+  }
+  width: 720px;
 }
 
-.btn-central:hover {
-  background: darken($theme-color-accent, 5%);
-}
-
-.btn-central:active, .btn-central:focus {
-  background: darken($theme-color-accent, 10%);
-}
-
-.img-hero {
-  width: 100%;
-  padding: 5px 0;
-}
-
-.item {
-  margin: 10px 0;
-}
-/*
- * Horizontal Rules
- */
-hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 0;
-  border-top: 1px solid $theme-color-primary;
-}
-
-hr.heavy {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 0;
-  border-top: 8px solid $theme-color-primary;
-}
+@import "navbar";
+@import "blog";
+@import "footer";
