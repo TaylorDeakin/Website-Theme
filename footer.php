@@ -28,6 +28,6 @@
 <script>
     objectFitImages();
 </script>
-<?php echo file_get_contents('themes/deakin/assets/icons.svg'); ?>
+<?php echo file_get_contents(dirname(__FILE__) .'/assets/icons.svg'); ?>
 </body>
 </html>
